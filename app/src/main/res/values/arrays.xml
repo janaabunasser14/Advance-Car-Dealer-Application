@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Add this array -->
+    <string-array name="search_types">
+        <item>Price</item>
+        <item>Model</item>
+        <item>miles</item>
+        <item>fuel</item>
+        <item>transmission</item>
+        <item>type</item>
+    </string-array>
+</resources>
