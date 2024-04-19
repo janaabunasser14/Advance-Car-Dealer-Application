@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/menu_icon"
+            android:title="Car Menu" />
+        <item
+            android:id="@+id/nav_reservation"
+            android:icon="@drawable/reservation_icon"
+            android:title="Your Reservations" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/favorite_icon"
+            android:title="Your Favorites" />
+        <item
+            android:id="@+id/nav_special"
+            android:icon="@drawable/special_icon"
+            android:title="Special Offers" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Profile">
+            <menu>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile_icon"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/baseline_logout_24"
+                    android:title="Logout" />
+
+
+            </menu>
+
+        </item>
+
+
+    </group>
+    <item  android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_call"
+                android:title="Call Us"
+                android:icon="@drawable/call_icon"/>
+            <item
+                android:id="@+id/nav_find"
+                android:title="Find Us"
+                android:icon="@drawable/map_icon"/>
+
+
+        </menu>
+
+    </item>
+
+</menu>

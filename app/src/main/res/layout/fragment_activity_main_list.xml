@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_main_list">
+
+    <!-- Existing ConstraintLayout with profile information -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Existing ImageView for the top background -->
+
+        <!-- Your existing ListView -->
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="405dp"
+            android:layout_height="139dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/top_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="404dp"
+            android:layout_height="772dp"
+            android:layout_marginTop="12dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView8"
+            app:layout_constraintVertical_bias="0.311"
+            tools:listitem="@layout/list_item"
+            android:clickable="true"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="94dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:background="#ffffff"
+            android:entries="@array/search_types"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/searchcon"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintStart_toEndOf="@+id/editTextText"
+            app:layout_constraintTop_toTopOf="@+id/editTextText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="186dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="     Enter The Value  "
+            android:inputType="text"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@+id/spinner2"
+            app:layout_constraintStart_toEndOf="@+id/spinner2"
+            app:layout_constraintTop_toTopOf="@+id/spinner2"
+            app:layout_constraintVertical_bias="0.76" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
